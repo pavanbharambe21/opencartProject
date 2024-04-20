@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name = "Suite" parallel = "tests">
+    <test thread-count = "5" name = "ChromeTest" >
+        <parameter name = "os" value = "windows" />
+        <parameter name = "browser" value = "chrome" />
+        <classes>
+            <class name = "testCases.TC_001_AccountRegistrationTest" />
+        </classes>
+    </test>
+    <test thread-count = "5" name = "EdgeTest" >
+        <parameter name = "os" value = "windows" />
+        <parameter name = "browser" value = "edge" />
+        <classes>
+            <class name = "testCases.TC_001_AccountRegistrationTest" />
+        </classes>
+    </test>
+</suite>
